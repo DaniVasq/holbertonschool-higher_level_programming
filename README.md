@@ -1,2 +1,1 @@
-# holbertonschool-higher_level_programming
-Holberton School Higher Level Programming Repo
+This repository contains several Python tasks for Holberton School.
