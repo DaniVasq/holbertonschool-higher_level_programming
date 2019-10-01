@@ -5,13 +5,13 @@ def list_division(my_list_1, my_list_2, list_length):
         try:
             result = my_list_1[i] / my_list_2[i]
         except ZeroDivisionError:
-            print("division by 0")
+            print("{:s}".format("division by 0"))
             value = 0
         except TypeError:
-            print("wrong type")
+            print("{:s}".format("wrong type"))
             value = 0
         except IndexError:
-            print("out of range")
+            print("{:d}".format("out of range"))
             value = 0
         finally:
             newList.append(value)
