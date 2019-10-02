@@ -20,11 +20,13 @@ class Square:
 
     def area(self):
         return self.__size * self.__size
+
     def my_print(self):
         """function to print the square in #"""
         if self.__size == 0:
             print()
         else:
-            for i in range(self.__size)
-                print("#", end="")
-            print()
+            for x in range(self.__size):
+                    for i in range(self.__size):
+                        print("#", end="")
+                    print()
