@@ -101,7 +101,8 @@ class Rectangle(Base):
             print()
 
     def __str__(self):
-        """overriding the string method to return output"""
+        """str function to print"""
 
-        return ("[Rectangle] ({}) {}/{} - {}/{}").
-        format(self.id, self.x, self.y, self.width, self.height)
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x,
+                                                       self.y, self.width,
+                                                       self.height)
