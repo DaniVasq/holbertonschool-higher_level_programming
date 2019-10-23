@@ -20,7 +20,7 @@ class Rectangle(Base):
         super().__init__(id)
 
     @property
-    def width(self)
+    def width(self):
 
 
         """getter"""
