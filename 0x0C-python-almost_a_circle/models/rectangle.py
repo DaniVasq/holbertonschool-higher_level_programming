@@ -8,11 +8,9 @@ from models.base import Base
 class Rectangle(Base):
     """Rectangle class based on Base"""
 
-
     def __init__(self, width, height, x=0, y=0, id=None):
-
-
         """private attributes"""
+
         self.width = width
         self.height = height
         self.x = x
@@ -21,16 +19,13 @@ class Rectangle(Base):
 
     @property
     def width(self):
-
-
-        """getter"""
+        """getter for width"""
         return self.__width
 
     @width.setter
     def width(self, value)
-
-
         """setter"""
+
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         elif value <= 0:
@@ -39,16 +34,14 @@ class Rectangle(Base):
 
     @property
     def height(self)
-
-
         """getter height"""
+
         return self.__height
 
     @height.setter
     def height(self, value):
-
-
         """setter height"""
+
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         elif value <= 0:
@@ -57,16 +50,14 @@ class Rectangle(Base):
 
     @property
     def x(self)
-
-
         """getter for x"""
+
         return self.__x
 
     @x.setter
     def x(self, value):
-
-
         """setter for x"""
+
         if not isinstance(value, int):
             raise TypeError("x must be an integer")
         elif value < 0:
@@ -80,9 +71,8 @@ class Rectangle(Base):
 
     @y.setter
     def y(self, value):
-
-
         """setter for y"""
+
         if not isinstance(value, int):
             raise TypeError("y must be an integer")
         elif value < 0:
