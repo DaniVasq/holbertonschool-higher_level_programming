@@ -129,5 +129,5 @@ class Rectangle(Base):
     def to_dictionary(self):
         """returns dictionary rep of Rectangle"""
 
-        attrlist = ["id", "size", "x", "y"]
-        return {key: getattr(self, key) for key in attrlist}
+        attrs_list = ["id", "size", "x", "y"]
+        return {key: getattr(self, key) for key in attrs_list}
