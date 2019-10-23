@@ -23,7 +23,7 @@ class Rectangle(Base):
         return self.__width
 
     @width.setter
-    def width(self, value)
+    def width(self, value):
         """setter"""
 
         if not isinstance(value, int):
@@ -33,7 +33,7 @@ class Rectangle(Base):
         self.__width = value
 
     @property
-    def height(self)
+    def height(self):
         """getter height"""
 
         return self.__height
@@ -49,7 +49,7 @@ class Rectangle(Base):
         self.__height = value
 
     @property
-    def x(self)
+    def x(self):
         """getter for x"""
 
         return self.__x
@@ -65,8 +65,9 @@ class Rectangle(Base):
         self.__x = value
 
     @property
-    def y(self)
+    def y(self):
         """getter for y"""
+
         return self.__y
 
     @y.setter
