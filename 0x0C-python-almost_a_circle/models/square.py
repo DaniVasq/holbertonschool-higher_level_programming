@@ -44,5 +44,5 @@ class Square(Rectangle):
                 if i == 3:
                     self.y = j
         else:
-            for k, v in kwargs.items():
+            for c, j in kwargs.items():
                 setattr(self, c, j)
