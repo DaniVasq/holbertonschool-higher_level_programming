@@ -14,7 +14,7 @@ class Base:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
 
-@staticmethod
+    @staticmethod
     def draw(list_rectangles, list_squares):
         """turtle code"""
         dani = turtle.Turtle()
