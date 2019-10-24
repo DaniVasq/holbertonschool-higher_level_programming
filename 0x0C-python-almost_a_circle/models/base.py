@@ -16,6 +16,7 @@ class Base:
 
 @staticmethod
     def draw(list_rectangles, list_squares):
+        """turtle code"""
         dani = turtle.Turtle()
         dani.shape("turtle")
         dani.color("Dark Salmon")
