@@ -44,3 +44,11 @@ class Base:
                 dani.left(90)
             dani.hideturtle()
         dani.done()
+
+    def to_json_string(list_dictionaries):
+        """returns JSON rep of list_dictionaries"""
+        list_dictionaries = {}
+        if list_dictionaries is None or len(list_dictionaries) == 0:
+            return "[]"
+        else:
+            return json.dumps(list_dictionaries)
