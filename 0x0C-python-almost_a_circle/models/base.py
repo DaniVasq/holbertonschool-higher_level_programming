@@ -6,8 +6,10 @@ class Base:
     """Base class"""
     __nb_objects = 0
 
+    @staticmethod
     def __init__(self, id=None):
         """instantiation of base"""
+
         if id is not None:
             self.id = id
         else:
@@ -16,6 +18,7 @@ class Base:
 
     @staticmethod
     def draw(list_rectangles, list_squares):
+
         """turtle code"""
         dani = turtle.Turtle()
         dani.shape("turtle")
