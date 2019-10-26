@@ -48,17 +48,10 @@ class Base:
         dani.done()
 
     @staticmethod
-    def from_json_string(json_string):
-        """Converts json to string rep"""
-        if json_string is None or len(json_string) == 0:
-            return []
-        else:
-            return json.loads(json_string)
-
-    @staticmethod
     def to_json_string(list_dictionaries):
-        """Converts a dictionary or string to JSON"""
-        if list_dictionaries is None or len(list_dictionaries) == 0:
+        """return the JSON representation"""
+
+        if list_dictionaries is None or \
+                len(list_dictionaries) == 0:
             return "[]"
-        else:
-            return json.dumps(list_dictionaries)
+        return json.dumps(list_dictionaries)
