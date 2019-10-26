@@ -6,7 +6,6 @@ class Base:
     """Base class"""
     __nb_objects = 0
 
-    @staticmethod
     def __init__(self, id=None):
         """instantiation of base"""
 
@@ -48,7 +47,9 @@ class Base:
             dani.hideturtle()
         dani.done()
 
+    @staticmethod
     def to_json_string(list_dictionaries):
+
         """returns JSON rep of list_dictionaries"""
         list_dictionaries = {}
         if list_dictionaries is None or len(list_dictionaries) == 0:
