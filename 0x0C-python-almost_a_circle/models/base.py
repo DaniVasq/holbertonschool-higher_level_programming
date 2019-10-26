@@ -54,3 +54,11 @@ class Base:
             return []
         else:
             return json.loads(json_string)
+
+    @staticmethod
+    def to_json_string(list_dictionaries):
+        """Converts a dictionary or string to JSON"""
+        if list_dictionaries is None or len(list_dictionaries) == 0:
+            return "[]"
+        else:
+            return json.dumps(list_dictionaries)
