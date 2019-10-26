@@ -51,7 +51,6 @@ class Base:
     def to_json_string(list_dictionaries):
 
         """returns JSON rep of list_dictionaries"""
-        list_dictionaries = {}
         if list_dictionaries is None or len(list_dictionaries) == 0:
             return "[]"
         else:
