@@ -52,7 +52,7 @@ class Base:
         """return the JSON representation"""
 
         if list_dictionaries is None or len(list_dictionaries) == []:
-            return "[]"
+            return []
         return json.dumps(list_dictionaries)
 
     @classmethod
@@ -72,6 +72,6 @@ class Base:
         """returns list of JSON str rep of json_string"""
 
         if json_string is None or len(json_string) == []:
-            return "[]"
+            return []
         else:
-            return json_string
+            return json.loads(json_string)
