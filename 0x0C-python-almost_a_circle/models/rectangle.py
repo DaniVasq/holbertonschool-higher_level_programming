@@ -129,14 +129,9 @@ class Rectangle(Base):
     def to_dictionary(self):
         """dictionary representationp"""
 
-        my_dict = {'id': 0, 'size': 0, 'x': 0, 'y': 0}
-        for i in my_dict:
-            if i == 'id':
-                my_dict[i] = self.id
-            if i == 'size':
-                my_dict[i] = self.width
-            if i == 'x':
-                my_dict[i] = self.x
-            if i == 'y':
-                my_dict[i] = self.y
-        return(my_dict)
+        my_dict = {}
+        my_dict["id"] = self.id
+        my_dict["size"] = self.size
+        my_dict["x"] = self.x
+        my_dict["y"] = self.y
+        return my_dict
