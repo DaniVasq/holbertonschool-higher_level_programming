@@ -1,0 +1,1 @@
+In this project, I learned what ORM is and how to use MySql with Python.
