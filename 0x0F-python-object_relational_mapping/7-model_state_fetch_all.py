@@ -3,7 +3,7 @@
 """
 import sys
 from sqlalchemy.orm import sessionmaker
-from sqlalchemy import (create_engine)
+from sqlalchemy import create_engine
 from model_state import State
 
 if __name__ == "__main__":
